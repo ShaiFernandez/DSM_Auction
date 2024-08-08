@@ -1,0 +1,30 @@
+Seller1:
+  location:
+    - 1.00
+    - 1.00
+  blocks:
+    block1:
+      - quantity: 200
+      - price: 200
+      - discount: 0
+    block2:
+      - quantity: 400
+      - price: 200
+      - discount: 0.2
+    block3:
+      - quantity: 200
+      - price: 150
+      - discount: 0.2
+Seller2:
+  location:
+    - 2.00
+    - 2.00
+  blocks:
+    block1:
+      - quantity: 600
+      - price: 200
+      - discount: 0
+    block2:
+      - quantity: 800
+      - price: 200
+      - discount: 0.3

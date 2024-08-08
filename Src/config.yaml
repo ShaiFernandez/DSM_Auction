@@ -1,0 +1,22 @@
+#seed: 3259
+#sellers: 14
+#bidders: 5
+#resource-usage: 0.2794
+#radius: 10
+#distance-limit: 20.65
+#distance-penalty: 5.58
+#slotsize: 2
+#end-threshold: 2
+
+run-id: test-33
+seed: 534
+sellers: 10
+bidders: 10
+resource-usage: 0.25
+min-block: 1
+max-block: 2
+distance-limit: 7.1
+distance-penalty: 2
+radius: 5
+slotsize: 2
+end-threshold: 2
