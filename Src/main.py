@@ -1,6 +1,5 @@
 import copy
 
-from Bid import *
 from AuctionRound import *
 from excelData import *
 from Cities import *
