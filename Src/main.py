@@ -1,6 +1,5 @@
 import copy
 
-from SimEngine import *
 import Sellers
 from Bid import *
 from AuctionRound import *
