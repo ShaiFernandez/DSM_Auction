@@ -3,7 +3,6 @@ import copy
 import Sellers
 from Bid import *
 from AuctionRound import *
-from Bidders import *
 from ReferenceCalculator import *
 from excelData import *
 from Cities import *
