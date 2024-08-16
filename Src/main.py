@@ -1,13 +1,11 @@
 import copy
 
-from AuctionRound import *
 from excelData import *
 from Cities import *
 from Behaviour import *
 import random
 import math
 import yaml
-import pymongo
 from pymongo import MongoClient
 
 uri = "mongodb+srv://admin-test:test@cluster0.rpqlu.mongodb.net/?retryWrites=true&w=majority"
