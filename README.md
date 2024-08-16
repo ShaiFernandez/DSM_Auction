@@ -1,19 +1,14 @@
 # DSM Auction Simulation Program
 
-## Table of Contents
-* Overview
-* Installation
-* Usage
-* Modules Description
-* Configuration
-* Dependencies
-* Contributing
-* License
-
-
-
 ## Overview
-This project is an auction simulation program that models the behavior of bidders and sellers in a dynamic auction environment. The program uses a MongoDB database to store and manage auction data and supports various auction strategies and configurations.
+This program is designed to simulate a market environment demand-supply matchmaking (DSM) involving bidders and sellers within various geographic locations. It uses a combination of random behavior generation, geographic data, and configuration parameters to run simulations and output data in a structured format.
+
+## Features
+* **Behavior Simulation**: Generates behaviors for different participants based on aggressiveness, market price factors, and other parameters.
+* **Geographic Data**: Utilizes city data to simulate interactions based on real-world locations.
+* **Configuration**: Fully customizable simulation parameters via a YAML configuration file.
+* **Data Export**: Output simulation results to Excel for further analysis.
+* **Database Integration**: Uses MongoDB to manage and store data related to bidders, sellers, and other entities.
 
 ## Installation
 ### Prerequisites
@@ -24,8 +19,7 @@ This project is an auction simulation program that models the behavior of bidder
 ### Installation Steps
 1. Clone the repository:
 ```python
-git clone https://github.com/your-repository.git
-cd your-repository
+git clone https://github.com/ShaiFernandez/DSM_Auction.git
 ```
 2. Install required Python packages:
 ```python
@@ -35,14 +29,30 @@ Set up MongoDB:
 * Create a MongoDB database and collections for bidders and sellers.
 * Update the uri in the main.py file with your MongoDB connection string.
 
+## Configuration
+The simulation parameters are controlled through the **config.yaml** file. Key parameters include:
+
+* seed: Random seed for reproducibility.
+* sellers: Number of sellers in the simulation.
+* bidders: Number of bidders in the simulation.
+* resource-usage, distance-limit, distance-penalty, etc.: Various settings that control the behavior of the simulation.
+
 ## Usage
+1. **Run the simulation**:
 To run the auction simulation, execute the "main.py" script:
 ```python
 python main.py
 ```
+2. **Export Data**:
+Data will be automatically exported to an Excel file based on the results of the simulation.
 
-### Key Features
-* **Auction Simulation**: Simulates auction rounds with multiple bidders and sellers.
-* **Behavior Modeling**: Includes different behavioral strategies for bidders and sellers.
-* **Data Management**: Uses MongoDB for storing auction-related data.
-* **Custom Configurations**: Easily configurable auction parameters.
+## Files
+* Behaviour.py: Handles the generation of participant behaviors.
+* Cities.py: Contains geographic data used in the simulation.
+* config.yaml: Configuration file for simulation parameters.
+* excelData.py: Exports simulation data to Excel.
+* main.py: The main script that runs the simulation.
+* maps_coordinates.py: Generates random geographic coordinates for simulation purposes.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
