@@ -55,4 +55,4 @@ Data will be automatically exported to an Excel file based on the results of the
 * maps_coordinates.py: Generates random geographic coordinates for simulation purposes.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License - see the LICENSE file for details.
